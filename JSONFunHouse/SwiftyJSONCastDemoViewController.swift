@@ -37,6 +37,8 @@ class SwiftyJSONCastDemoViewController: UITableViewController, DataURLLoadable {
                         let castMember = FireflyCastMember(name: name, biography: biography)
                         castList.append(castMember)
                     } else {
+                        // This sadly will be nil, see:
+                        // https://github.com/SwiftyJSON/SwiftyJSON/issues/433
                         presentError(subJson["bio"].error)
                     }
                 } else {
