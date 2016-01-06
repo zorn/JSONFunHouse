@@ -1,9 +1,11 @@
 # JSON Review
 
+Date formats?
+
 ## Freddy
 
 * URL:
-* Licence: 
+* License: 
 
 ### Pros:
 
@@ -18,29 +20,34 @@
 ## SwiftJSON
 
 * URL: https://github.com/SwiftyJSON/SwiftyJSON
-* Licence: The MIT License
+* License: The MIT License
 
 ### Pros:
 
 * Uses Swift optional types for security
+* Is not as type safe as I would like. [#323](https://github.com/SwiftyJSON/SwiftyJSON/issues/433)
+* Can help serialize objects into json
 
 ### Cons: 
 
-* Does not offer native tool to transform JSON into object instances
+* Does not offer native tool to transform JSON into object instances, feels very manual.
 
 ## Speed:
 
 
 
-## Freddy
+## AlamofireJsonToObjects
 
-* URL:
-* Licence: 
+* URL: https://github.com/evermeer/AlamofireJsonToObjects
+* License: MIT
 
 ### Pros:
 
-* Pro
+* Lets you map json responses to object instances
 
 ### Cons: 
+
+* requries classes subclass from EVObject
+* awkward propertyMapping syntax
 
 * Con
