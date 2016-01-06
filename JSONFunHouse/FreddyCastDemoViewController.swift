@@ -1,7 +1,7 @@
 import UIKit
 import Freddy
 
-class FreddyCastDemoViewController: UITableViewController {
+class FreddyCastDemoViewController: UITableViewController, DataURLLoadable {
     
     var dataURL: NSURL?
     var castList = [FireflyCastMember]() {

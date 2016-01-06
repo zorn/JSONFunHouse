@@ -1,17 +1,22 @@
 import UIKit
 
-struct MenuSection {
-    let name: String
-    let items: [MenuItem]
-}
-
-struct MenuItem {
-    let name: String
-    let storyboardID: String
-    let dataFilename: String
-}
-
 class MenuViewController : UITableViewController {
+    
+    struct MenuSection {
+        let sectionType: SectionType
+        let items: [MenuItem]
+    }
+    
+    struct MenuItem {
+        let name: String
+        let storyboardID: String
+        let dataFilename: String
+    }
+    
+    enum SectionType: String {
+        case Freddy
+        case SwiftyJSON
+    }
     
     var sections = [MenuSection]()
     
@@ -25,12 +30,12 @@ class MenuViewController : UITableViewController {
         let freddyMenu1 = MenuItem(name: "Cast Demo", storyboardID: "FreddyCastDemoViewController", dataFilename: "firefly")
         let freddyMenu2 = MenuItem(name: "Cast Demo (Missing Key)", storyboardID: "FreddyCastDemoViewController", dataFilename: "firefly-missing-key")
         let freddyMenu3 = MenuItem(name: "Cast Demo (Bad Type)", storyboardID: "FreddyCastDemoViewController", dataFilename: "firefly-wrong-type")
-        let freddySection = MenuSection(name: "Freddy", items: [freddyMenu1, freddyMenu2, freddyMenu3])
+        let freddySection = MenuSection(sectionType: .Freddy, items: [freddyMenu1, freddyMenu2, freddyMenu3])
         
-        let swiftyMenu1 = MenuItem(name: "Cast Demo", storyboardID: "FreddyCastDemoViewController", dataFilename: "firefly")
-        let swiftyMenu2 = MenuItem(name: "Cast Demo (Missing Key)", storyboardID: "FreddyCastDemoViewController", dataFilename: "firefly-missing-key")
-        let swiftyMenu3 = MenuItem(name: "Cast Demo (Bad Type)", storyboardID: "FreddyCastDemoViewController", dataFilename: "firefly-wrong-type")
-        let swiftySection = MenuSection(name: "SwiftyJSON", items: [swiftyMenu1, swiftyMenu2, swiftyMenu3])
+        let swiftyMenu1 = MenuItem(name: "Cast Demo", storyboardID: "SwiftyJSONCastDemoViewController", dataFilename: "firefly")
+        let swiftyMenu2 = MenuItem(name: "Cast Demo (Missing Key)", storyboardID: "SwiftyJSONCastDemoViewController", dataFilename: "firefly-missing-key")
+        let swiftyMenu3 = MenuItem(name: "Cast Demo (Bad Type)", storyboardID: "SwiftyJSONCastDemoViewController", dataFilename: "firefly-wrong-type")
+        let swiftySection = MenuSection(sectionType: .SwiftyJSON, items: [swiftyMenu1, swiftyMenu2, swiftyMenu3])
         
         // TODO: Make test cast for loading 1,10,100,1000,10000,100000 small / med / large sizes 
         
@@ -45,7 +50,7 @@ extension MenuViewController { // UITableViewDataSource
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sections[section].name
+        return sections[section].sectionType.rawValue
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,8 +67,8 @@ extension MenuViewController { // UITableViewDataSource
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let section = sections[indexPath.section]
         let menuItem = section.items[indexPath.row]
-        let vc = self.storyboard!.instantiateViewControllerWithIdentifier(menuItem.storyboardID) as! FreddyCastDemoViewController
+        var vc = self.storyboard!.instantiateViewControllerWithIdentifier(menuItem.storyboardID) as! DataURLLoadable
         vc.dataURL = NSBundle.mainBundle().URLForResource(menuItem.dataFilename, withExtension: "json")
-        showViewController(vc, sender: self)
+        showViewController(vc as! UIViewController, sender: self)
     }
 }

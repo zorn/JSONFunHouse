@@ -19,6 +19,8 @@
 		1A146C5B1C3850E5005740AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A146C591C3850E5005740AE /* LaunchScreen.storyboard */; };
 		1A146C661C3850E5005740AE /* JSONFunHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A146C651C3850E5005740AE /* JSONFunHouseTests.swift */; };
 		1A146C711C3850E6005740AE /* JSONFunHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A146C701C3850E6005740AE /* JSONFunHouseUITests.swift */; };
+		1AA9BAEB1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9BAEA1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift */; };
+		1AA9BAED1C3CA2BA00B612C8 /* DataURLLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9BAEC1C3CA2BA00B612C8 /* DataURLLoadable.swift */; };
 		4D199C2D02B5A59F21CB76C7 /* Pods_JSONFunHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C0D386C120493DE2773EC1 /* Pods_JSONFunHouse.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		1A146C6C1C3850E6005740AE /* JSONFunHouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONFunHouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A146C701C3850E6005740AE /* JSONFunHouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFunHouseUITests.swift; sourceTree = "<group>"; };
 		1A146C721C3850E6005740AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AA9BAEA1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSONCastDemoViewController.swift; sourceTree = "<group>"; };
+		1AA9BAEC1C3CA2BA00B612C8 /* DataURLLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataURLLoadable.swift; sourceTree = "<group>"; };
 		2DBA1DE868570635C62D567E /* Pods-JSONFunHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONFunHouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONFunHouse/Pods-JSONFunHouse.release.xcconfig"; sourceTree = "<group>"; };
 		378274FCFC7AA21F3E73A3AC /* Pods-JSONFunHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONFunHouse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONFunHouse/Pods-JSONFunHouse.debug.xcconfig"; sourceTree = "<group>"; };
 		39C0D386C120493DE2773EC1 /* Pods_JSONFunHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSONFunHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,7 +140,9 @@
 				1A096A361C3851FA00E89867 /* Sample JSON */,
 				1A146C501C3850E5005740AE /* AppDelegate.swift */,
 				1A096A401C385E4600E89867 /* MenuViewController.swift */,
+				1AA9BAEC1C3CA2BA00B612C8 /* DataURLLoadable.swift */,
 				1A096A371C3852B600E89867 /* FreddyCastDemoViewController.swift */,
+				1AA9BAEA1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift */,
 				1A146C541C3850E5005740AE /* Main.storyboard */,
 				1A146C571C3850E5005740AE /* Assets.xcassets */,
 				1A146C591C3850E5005740AE /* LaunchScreen.storyboard */,
@@ -366,7 +372,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A146C511C3850E5005740AE /* AppDelegate.swift in Sources */,
+				1AA9BAED1C3CA2BA00B612C8 /* DataURLLoadable.swift in Sources */,
 				1A096A381C3852B600E89867 /* FreddyCastDemoViewController.swift in Sources */,
+				1AA9BAEB1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift in Sources */,
 				1A096A3A1C38547400E89867 /* FireflyCastMember.swift in Sources */,
 				1A096A411C385E4600E89867 /* MenuViewController.swift in Sources */,
 			);
