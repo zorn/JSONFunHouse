@@ -1,0 +1,22 @@
+PODS:
+  - Freddy (2.0.0b1)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Freddy (from `https://github.com/bignerdranch/Freddy.git`)
+  - SwiftyJSON (~> 2.3)
+
+EXTERNAL SOURCES:
+  Freddy:
+    :git: https://github.com/bignerdranch/Freddy.git
+
+CHECKOUT OPTIONS:
+  Freddy:
+    :commit: 5a1e2dd5b4d1bd3be3e3af9d964a5d776c408dbb
+    :git: https://github.com/bignerdranch/Freddy.git
+
+SPEC CHECKSUMS:
+  Freddy: 6aa6a9ee298e832ad788c59844994943bfcb9947
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0
