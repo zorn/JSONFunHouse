@@ -19,6 +19,9 @@
 		1A146C5B1C3850E5005740AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A146C591C3850E5005740AE /* LaunchScreen.storyboard */; };
 		1A146C661C3850E5005740AE /* JSONFunHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A146C651C3850E5005740AE /* JSONFunHouseTests.swift */; };
 		1A146C711C3850E6005740AE /* JSONFunHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A146C701C3850E6005740AE /* JSONFunHouseUITests.swift */; };
+		1A5D08001C443A7A005CB20D /* meetings.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A5D07FE1C443A7A005CB20D /* meetings.json */; };
+		1A5D08011C443A7A005CB20D /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A5D07FF1C443A7A005CB20D /* weather.json */; };
+		1A5D08031C443A9C005CB20D /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D08021C443A9C005CB20D /* WeatherViewController.swift */; };
 		1AA9BAEB1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9BAEA1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift */; };
 		1AA9BAED1C3CA2BA00B612C8 /* DataURLLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9BAEC1C3CA2BA00B612C8 /* DataURLLoadable.swift */; };
 		4D199C2D02B5A59F21CB76C7 /* Pods_JSONFunHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C0D386C120493DE2773EC1 /* Pods_JSONFunHouse.framework */; };
@@ -42,11 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A096A341C3851F500E89867 /* firefly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = firefly.json; path = SampleJSON/firefly.json; sourceTree = SOURCE_ROOT; };
+		1A096A341C3851F500E89867 /* firefly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = firefly.json; path = JSONFunHouse/SampleJSON/firefly.json; sourceTree = SOURCE_ROOT; };
 		1A096A371C3852B600E89867 /* FreddyCastDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreddyCastDemoViewController.swift; sourceTree = "<group>"; };
 		1A096A391C38547400E89867 /* FireflyCastMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireflyCastMember.swift; sourceTree = "<group>"; };
-		1A096A3C1C385DC200E89867 /* firefly-missing-key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "firefly-missing-key.json"; path = "SampleJSON/firefly-missing-key.json"; sourceTree = SOURCE_ROOT; };
-		1A096A3D1C385DC200E89867 /* firefly-wrong-type.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "firefly-wrong-type.json"; path = "SampleJSON/firefly-wrong-type.json"; sourceTree = SOURCE_ROOT; };
+		1A096A3C1C385DC200E89867 /* firefly-missing-key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "firefly-missing-key.json"; path = "JSONFunHouse/SampleJSON/firefly-missing-key.json"; sourceTree = SOURCE_ROOT; };
+		1A096A3D1C385DC200E89867 /* firefly-wrong-type.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "firefly-wrong-type.json"; path = "JSONFunHouse/SampleJSON/firefly-wrong-type.json"; sourceTree = SOURCE_ROOT; };
 		1A096A401C385E4600E89867 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1A146C4D1C3850E5005740AE /* JSONFunHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONFunHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A146C501C3850E5005740AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +63,9 @@
 		1A146C6C1C3850E6005740AE /* JSONFunHouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONFunHouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A146C701C3850E6005740AE /* JSONFunHouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFunHouseUITests.swift; sourceTree = "<group>"; };
 		1A146C721C3850E6005740AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A5D07FE1C443A7A005CB20D /* meetings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = meetings.json; path = SampleJSON/meetings.json; sourceTree = "<group>"; };
+		1A5D07FF1C443A7A005CB20D /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = weather.json; path = SampleJSON/weather.json; sourceTree = "<group>"; };
+		1A5D08021C443A9C005CB20D /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		1AA9BAEA1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSONCastDemoViewController.swift; sourceTree = "<group>"; };
 		1AA9BAEC1C3CA2BA00B612C8 /* DataURLLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataURLLoadable.swift; sourceTree = "<group>"; };
 		2DBA1DE868570635C62D567E /* Pods-JSONFunHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONFunHouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONFunHouse/Pods-JSONFunHouse.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +102,8 @@
 		1A096A361C3851FA00E89867 /* Sample JSON */ = {
 			isa = PBXGroup;
 			children = (
+				1A5D07FE1C443A7A005CB20D /* meetings.json */,
+				1A5D07FF1C443A7A005CB20D /* weather.json */,
 				1A096A3C1C385DC200E89867 /* firefly-missing-key.json */,
 				1A096A3D1C385DC200E89867 /* firefly-wrong-type.json */,
 				1A096A341C3851F500E89867 /* firefly.json */,
@@ -141,6 +149,7 @@
 				1A146C501C3850E5005740AE /* AppDelegate.swift */,
 				1A096A401C385E4600E89867 /* MenuViewController.swift */,
 				1AA9BAEC1C3CA2BA00B612C8 /* DataURLLoadable.swift */,
+				1A5D08021C443A9C005CB20D /* WeatherViewController.swift */,
 				1A096A371C3852B600E89867 /* FreddyCastDemoViewController.swift */,
 				1AA9BAEA1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift */,
 				1A146C541C3850E5005740AE /* Main.storyboard */,
@@ -297,7 +306,9 @@
 				1A096A351C3851F500E89867 /* firefly.json in Resources */,
 				1A096A3E1C385DC200E89867 /* firefly-missing-key.json in Resources */,
 				1A096A3F1C385DC200E89867 /* firefly-wrong-type.json in Resources */,
+				1A5D08011C443A7A005CB20D /* weather.json in Resources */,
 				1A146C581C3850E5005740AE /* Assets.xcassets in Resources */,
+				1A5D08001C443A7A005CB20D /* meetings.json in Resources */,
 				1A146C561C3850E5005740AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +386,7 @@
 				1AA9BAED1C3CA2BA00B612C8 /* DataURLLoadable.swift in Sources */,
 				1A096A381C3852B600E89867 /* FreddyCastDemoViewController.swift in Sources */,
 				1AA9BAEB1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift in Sources */,
+				1A5D08031C443A9C005CB20D /* WeatherViewController.swift in Sources */,
 				1A096A3A1C38547400E89867 /* FireflyCastMember.swift in Sources */,
 				1A096A411C385E4600E89867 /* MenuViewController.swift in Sources */,
 			);

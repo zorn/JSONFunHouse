@@ -81,6 +81,48 @@
             </objects>
             <point key="canvasLocation" x="1783" y="684"/>
         </scene>
+        <!--Weather View Controller-->
+        <scene sceneID="2k0-0P-cl5">
+            <objects>
+                <viewController id="COU-rA-WmN" customClass="WeatherViewController" customModule="JSONFunHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wkt-nY-iS1"/>
+                        <viewControllerLayoutGuide type="bottom" id="QtY-hl-Rmy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Be6-XA-8QR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condition Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuV-f2-n4b">
+                                <rect key="frame" x="160" y="326" width="280" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J10-E1-DBc">
+                                <rect key="frame" x="248" y="241" width="105" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J10-E1-DBc" firstAttribute="centerY" secondItem="Be6-XA-8QR" secondAttribute="centerY" constant="-21" id="C6B-iA-s8R"/>
+                            <constraint firstItem="JuV-f2-n4b" firstAttribute="top" secondItem="J10-E1-DBc" secondAttribute="bottom" constant="8" id="LAs-61-lRf"/>
+                            <constraint firstItem="JuV-f2-n4b" firstAttribute="centerX" secondItem="J10-E1-DBc" secondAttribute="centerX" id="P2l-lQ-NiQ"/>
+                            <constraint firstItem="J10-E1-DBc" firstAttribute="centerX" secondItem="Be6-XA-8QR" secondAttribute="centerX" id="uHz-wE-XpP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="summaryLabel" destination="JuV-f2-n4b" id="eao-dJ-bO0"/>
+                        <outlet property="temperatureLabel" destination="J10-E1-DBc" id="1bc-T8-XOG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVB-pF-zph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2449" y="21"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="GAd-jj-Q6k">
             <objects>
