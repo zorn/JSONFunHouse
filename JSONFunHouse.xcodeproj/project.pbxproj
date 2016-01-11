@@ -22,6 +22,7 @@
 		1A5D08001C443A7A005CB20D /* meetings.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A5D07FE1C443A7A005CB20D /* meetings.json */; };
 		1A5D08011C443A7A005CB20D /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A5D07FF1C443A7A005CB20D /* weather.json */; };
 		1A5D08031C443A9C005CB20D /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D08021C443A9C005CB20D /* WeatherViewController.swift */; };
+		1AA7B5191C443FEB0071093E /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA7B5181C443FEB0071093E /* UIViewController+Alerts.swift */; };
 		1AA9BAEB1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9BAEA1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift */; };
 		1AA9BAED1C3CA2BA00B612C8 /* DataURLLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9BAEC1C3CA2BA00B612C8 /* DataURLLoadable.swift */; };
 		4D199C2D02B5A59F21CB76C7 /* Pods_JSONFunHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C0D386C120493DE2773EC1 /* Pods_JSONFunHouse.framework */; };
@@ -66,6 +67,7 @@
 		1A5D07FE1C443A7A005CB20D /* meetings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = meetings.json; path = SampleJSON/meetings.json; sourceTree = "<group>"; };
 		1A5D07FF1C443A7A005CB20D /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = weather.json; path = SampleJSON/weather.json; sourceTree = "<group>"; };
 		1A5D08021C443A9C005CB20D /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		1AA7B5181C443FEB0071093E /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		1AA9BAEA1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSONCastDemoViewController.swift; sourceTree = "<group>"; };
 		1AA9BAEC1C3CA2BA00B612C8 /* DataURLLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataURLLoadable.swift; sourceTree = "<group>"; };
 		2DBA1DE868570635C62D567E /* Pods-JSONFunHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONFunHouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONFunHouse/Pods-JSONFunHouse.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		1A146C4F1C3850E5005740AE /* JSONFunHouse */ = {
 			isa = PBXGroup;
 			children = (
+				1AA7B5171C443FCE0071093E /* Extensions */,
 				1A096A3B1C3854B100E89867 /* Models */,
 				1A096A361C3851FA00E89867 /* Sample JSON */,
 				1A146C501C3850E5005740AE /* AppDelegate.swift */,
@@ -176,6 +179,14 @@
 				1A146C721C3850E6005740AE /* Info.plist */,
 			);
 			path = JSONFunHouseUITests;
+			sourceTree = "<group>";
+		};
+		1AA7B5171C443FCE0071093E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1AA7B5181C443FEB0071093E /* UIViewController+Alerts.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		9C596E478D56588F2BB70D74 /* Pods */ = {
@@ -385,6 +396,7 @@
 				1A146C511C3850E5005740AE /* AppDelegate.swift in Sources */,
 				1AA9BAED1C3CA2BA00B612C8 /* DataURLLoadable.swift in Sources */,
 				1A096A381C3852B600E89867 /* FreddyCastDemoViewController.swift in Sources */,
+				1AA7B5191C443FEB0071093E /* UIViewController+Alerts.swift in Sources */,
 				1AA9BAEB1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift in Sources */,
 				1A5D08031C443A9C005CB20D /* WeatherViewController.swift in Sources */,
 				1A096A3A1C38547400E89867 /* FireflyCastMember.swift in Sources */,

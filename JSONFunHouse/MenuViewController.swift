@@ -14,8 +14,9 @@ class MenuViewController : UITableViewController {
     }
     
     enum SectionType: String {
-        case Freddy
-        case SwiftyJSON
+        case Demos = "Freddy Demos"
+        case Freddy = "Firefly (Freddy)"
+        case SwiftyJSON = "Firefly (SwiftyJSON)"
     }
     
     var sections = [MenuSection]()
@@ -27,6 +28,9 @@ class MenuViewController : UITableViewController {
     
     private func loadMenu() {
         
+        let weather = MenuItem(name: "Weather Demo (Simple)", storyboardID: "WeatherViewController", dataFilename: "firefly")
+        let demos = MenuSection(sectionType: .Demos, items: [weather])
+        
         let freddyMenu1 = MenuItem(name: "Cast Demo", storyboardID: "FreddyCastDemoViewController", dataFilename: "firefly")
         let freddyMenu2 = MenuItem(name: "Cast Demo (Missing Key)", storyboardID: "FreddyCastDemoViewController", dataFilename: "firefly-missing-key")
         let freddyMenu3 = MenuItem(name: "Cast Demo (Bad Type)", storyboardID: "FreddyCastDemoViewController", dataFilename: "firefly-wrong-type")
@@ -36,10 +40,8 @@ class MenuViewController : UITableViewController {
         let swiftyMenu2 = MenuItem(name: "Cast Demo (Missing Key)", storyboardID: "SwiftyJSONCastDemoViewController", dataFilename: "firefly-missing-key")
         let swiftyMenu3 = MenuItem(name: "Cast Demo (Bad Type)", storyboardID: "SwiftyJSONCastDemoViewController", dataFilename: "firefly-wrong-type")
         let swiftySection = MenuSection(sectionType: .SwiftyJSON, items: [swiftyMenu1, swiftyMenu2, swiftyMenu3])
-        
-        // TODO: Make test cast for loading 1,10,100,1000,10000,100000 small / med / large sizes 
-        
-        self.sections = [freddySection, swiftySection]
+                
+        self.sections = [demos, freddySection, swiftySection]
     }
 }
 
@@ -67,8 +69,14 @@ extension MenuViewController { // UITableViewDataSource
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let section = sections[indexPath.section]
         let menuItem = section.items[indexPath.row]
-        var vc = self.storyboard!.instantiateViewControllerWithIdentifier(menuItem.storyboardID) as! DataURLLoadable
-        vc.dataURL = NSBundle.mainBundle().URLForResource(menuItem.dataFilename, withExtension: "json")
-        showViewController(vc as! UIViewController, sender: self)
+        switch section.sectionType {
+        case .Freddy, .SwiftyJSON:
+            var vc = self.storyboard!.instantiateViewControllerWithIdentifier(menuItem.storyboardID) as! DataURLLoadable
+            vc.dataURL = NSBundle.mainBundle().URLForResource(menuItem.dataFilename, withExtension: "json")
+            showViewController(vc as! UIViewController, sender: self)
+        case .Demos:
+            let vc = self.storyboard!.instantiateViewControllerWithIdentifier(menuItem.storyboardID) 
+            showViewController(vc, sender: self)
+        }
     }
 }

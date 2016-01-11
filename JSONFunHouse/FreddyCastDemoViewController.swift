@@ -40,12 +40,6 @@ class FreddyCastDemoViewController: UITableViewController, DataURLLoadable {
         }
     }
     
-    private func presentError(error: ErrorType) {
-        let alertVC = UIAlertController(title: "JSON Decode Error", message: "\(error)", preferredStyle: .Alert)
-        alertVC.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-        presentViewController(alertVC, animated: true, completion: nil)
-    }
-    
 }
 
 extension FreddyCastDemoViewController { // UITableViewDataSource
