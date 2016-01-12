@@ -84,10 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-JSONFunHouse/Argo.framework"
+  install_framework "Pods-JSONFunHouse/Curry.framework"
   install_framework "Pods-JSONFunHouse/Freddy.framework"
   install_framework "Pods-JSONFunHouse/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-JSONFunHouse/Argo.framework"
+  install_framework "Pods-JSONFunHouse/Curry.framework"
   install_framework "Pods-JSONFunHouse/Freddy.framework"
   install_framework "Pods-JSONFunHouse/SwiftyJSON.framework"
 fi

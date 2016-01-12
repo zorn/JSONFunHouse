@@ -17,6 +17,7 @@ class MenuViewController : UITableViewController {
         case Demos = "Freddy Demos"
         case Freddy = "Firefly (Freddy)"
         case SwiftyJSON = "Firefly (SwiftyJSON)"
+        case Argo = "Firefly (Argo)"
     }
     
     var sections = [MenuSection]()
@@ -41,8 +42,13 @@ class MenuViewController : UITableViewController {
         let swiftyMenu2 = MenuItem(name: "Cast Demo (Missing Key)", storyboardID: "SwiftyJSONCastDemoViewController", dataFilename: "firefly-missing-key")
         let swiftyMenu3 = MenuItem(name: "Cast Demo (Bad Type)", storyboardID: "SwiftyJSONCastDemoViewController", dataFilename: "firefly-wrong-type")
         let swiftySection = MenuSection(sectionType: .SwiftyJSON, items: [swiftyMenu1, swiftyMenu2, swiftyMenu3])
-                
-        self.sections = [demos, freddySection, swiftySection]
+
+        let argoMenu1 = MenuItem(name: "Cast Demo", storyboardID: "ArgoCastDemoViewController", dataFilename: "firefly")
+        let argoMenu2 = MenuItem(name: "Cast Demo (Missing Key)", storyboardID: "ArgoCastDemoViewController", dataFilename: "firefly-missing-key")
+        let argoMenu3 = MenuItem(name: "Cast Demo (Bad Type)", storyboardID: "ArgoCastDemoViewController", dataFilename: "firefly-wrong-type")
+        let argoSection = MenuSection(sectionType: .Argo, items: [argoMenu1, argoMenu2, argoMenu3])
+        
+        self.sections = [demos, freddySection, swiftySection, argoSection]
     }
 }
 
@@ -71,7 +77,7 @@ extension MenuViewController { // UITableViewDataSource
         let section = sections[indexPath.section]
         let menuItem = section.items[indexPath.row]
         switch section.sectionType {
-        case .Freddy, .SwiftyJSON:
+        case .Freddy, .SwiftyJSON, .Argo:
             var vc = self.storyboard!.instantiateViewControllerWithIdentifier(menuItem.storyboardID) as! DataURLLoadable
             vc.dataURL = NSBundle.mainBundle().URLForResource(menuItem.dataFilename, withExtension: "json")
             showViewController(vc as! UIViewController, sender: self)

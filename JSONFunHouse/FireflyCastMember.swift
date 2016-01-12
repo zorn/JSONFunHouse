@@ -1,5 +1,4 @@
 import Foundation
-import Freddy
 
 struct FireflyCastMember {
     
@@ -11,11 +10,4 @@ struct FireflyCastMember {
         self.biography = biography
     }
     
-}
-
-extension FireflyCastMember: JSONDecodable {
-    init(json value: JSON) throws {
-        name = try value.string("character")
-        biography = try value.string("bio")
-    }
 }
