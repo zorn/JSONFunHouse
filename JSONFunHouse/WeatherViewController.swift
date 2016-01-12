@@ -20,7 +20,7 @@ class WeatherViewController: UIViewController {
     }
     
     private func loadWeather() {
-        if let data = getData() {
+        if let data = getDataFromLocalJSONFileWithName("weather") {
             do {
                 let json = try JSON(data: data)
                 temperature = try json.double("currently", "temperature")
@@ -31,10 +31,4 @@ class WeatherViewController: UIViewController {
         }
     }
     
-    private func getData() -> NSData? {
-        if let dataURL = NSBundle.mainBundle().URLForResource("weather", withExtension: "json") {
-            return NSData(contentsOfURL: dataURL)
-        }
-        return nil
-    }
 }

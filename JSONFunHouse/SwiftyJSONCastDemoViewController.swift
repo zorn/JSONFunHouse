@@ -18,17 +18,8 @@ class SwiftyJSONCastDemoViewController: UITableViewController, DataURLLoadable {
         loadCastData()
     }
     
-    private func getData() -> NSData? {
-        if let dataURL = self.dataURL {
-            if let data = NSData(contentsOfURL: dataURL) {
-                return data
-            }
-        }
-        return nil
-    }
-    
     private func loadCastData() {
-        if let data = getData() {
+        if let data = getDataFromFileURL(self.dataURL) {
             let json = JSON(data: data)
             // FIXME: I want to be fair to SwiftyJSON -- is there a nicer way to chain these?
             for (_,subJson) in json {
@@ -46,7 +37,7 @@ class SwiftyJSONCastDemoViewController: UITableViewController, DataURLLoadable {
                 }
             }
         } else {
-            print("Could not load data file.")
+            presentError("Could not load data file.")
         }
     }
     

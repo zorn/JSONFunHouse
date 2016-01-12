@@ -28,8 +28,9 @@ class MenuViewController : UITableViewController {
     
     private func loadMenu() {
         
-        let weather = MenuItem(name: "Weather Demo (Simple)", storyboardID: "WeatherViewController", dataFilename: "firefly")
-        let demos = MenuSection(sectionType: .Demos, items: [weather])
+        let weather = MenuItem(name: "Weather Demo (Simple)", storyboardID: "WeatherViewController", dataFilename: "weather")
+        let meetingList = MenuItem(name: "Meeting List", storyboardID: "FreddyMeetingListViewConroller", dataFilename: "meetings")
+        let demos = MenuSection(sectionType: .Demos, items: [weather, meetingList])
         
         let freddyMenu1 = MenuItem(name: "Cast Demo", storyboardID: "FreddyCastDemoViewController", dataFilename: "firefly")
         let freddyMenu2 = MenuItem(name: "Cast Demo (Missing Key)", storyboardID: "FreddyCastDemoViewController", dataFilename: "firefly-missing-key")
