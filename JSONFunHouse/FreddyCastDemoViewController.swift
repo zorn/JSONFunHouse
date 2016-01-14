@@ -18,18 +18,18 @@ class FreddyCastDemoViewController: UITableViewController, DataURLLoadable {
         loadCastData()
     }
     
-    private func loadCastData() {
-        if let data = getDataFromFileURL(self.dataURL) {
-            do {
-                let json = try JSON(data: data)
-                self.castList = try json.array().map(FireflyCastMember.init)
-            } catch {
-                presentError(error)
-            }
-        } else {
-            presentError("Could not load data file.")
+private func loadCastData() {
+    if let data = getDataFromFileURL(self.dataURL) {
+        do {
+            let json = try JSON(data: data)
+            self.castList = try json.array().map(FireflyCastMember.init)
+        } catch {
+            presentError(error)
         }
+    } else {
+        presentError("Could not load data file.")
     }
+}
     
 }
 

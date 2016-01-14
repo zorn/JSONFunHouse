@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="1783" y="1356"/>
         </scene>
-        <!--Weather View Controller-->
+        <!--Freddy Weather View Controller-->
         <scene sceneID="2k0-0P-cl5">
             <objects>
-                <viewController storyboardIdentifier="WeatherViewController" id="COU-rA-WmN" customClass="WeatherViewController" customModule="JSONFunHouse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FreddyWeatherViewController" id="COU-rA-WmN" customClass="FreddyWeatherViewController" customModule="JSONFunHouse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wkt-nY-iS1"/>
                         <viewControllerLayoutGuide type="bottom" id="QtY-hl-Rmy"/>
@@ -258,6 +258,90 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rwe-FW-6bH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1783" y="21"/>
+        </scene>
+        <!--Native Weather View Controller-->
+        <scene sceneID="dRq-66-MpP">
+            <objects>
+                <viewController storyboardIdentifier="NativeWeatherViewController" id="E6f-Jm-8cZ" customClass="NativeWeatherViewController" customModule="JSONFunHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VP7-Hu-Xhq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lop-D1-tju"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Za8-wO-z8e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condition Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8k7-yg-rP8">
+                                <rect key="frame" x="160" y="326" width="280" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smo-pL-CBb">
+                                <rect key="frame" x="248" y="241" width="105" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="smo-pL-CBb" firstAttribute="centerX" secondItem="Za8-wO-z8e" secondAttribute="centerX" id="PY8-bt-710"/>
+                            <constraint firstItem="8k7-yg-rP8" firstAttribute="centerX" secondItem="smo-pL-CBb" secondAttribute="centerX" id="rhM-Av-Zsb"/>
+                            <constraint firstItem="8k7-yg-rP8" firstAttribute="top" secondItem="smo-pL-CBb" secondAttribute="bottom" constant="8" id="rtp-Ds-zPT"/>
+                            <constraint firstItem="smo-pL-CBb" firstAttribute="centerY" secondItem="Za8-wO-z8e" secondAttribute="centerY" constant="-21" id="tjp-38-CS5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="summaryLabel" destination="8k7-yg-rP8" id="a2b-vp-KSO"/>
+                        <outlet property="temperatureLabel" destination="smo-pL-CBb" id="fBa-uf-t3z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqY-pc-zbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3107" y="21"/>
+        </scene>
+        <!--SwiftyJSON Weather View Controller-->
+        <scene sceneID="Mhy-DM-fXw">
+            <objects>
+                <viewController storyboardIdentifier="SwiftyJSONWeatherViewController" id="EjJ-wg-tRQ" customClass="SwiftyJSONWeatherViewController" customModule="JSONFunHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eKp-np-gtm"/>
+                        <viewControllerLayoutGuide type="bottom" id="vrJ-xp-VUZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FvD-Zw-602">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condition Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5H-pC-bBH">
+                                <rect key="frame" x="160" y="326" width="280" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNW-ol-fM9">
+                                <rect key="frame" x="248" y="241" width="105" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g5H-pC-bBH" firstAttribute="top" secondItem="mNW-ol-fM9" secondAttribute="bottom" constant="8" id="IYo-5V-QWU"/>
+                            <constraint firstItem="mNW-ol-fM9" firstAttribute="centerX" secondItem="FvD-Zw-602" secondAttribute="centerX" id="K7E-97-tc7"/>
+                            <constraint firstItem="mNW-ol-fM9" firstAttribute="centerY" secondItem="FvD-Zw-602" secondAttribute="centerY" constant="-21" id="VLM-OU-r1y"/>
+                            <constraint firstItem="g5H-pC-bBH" firstAttribute="centerX" secondItem="mNW-ol-fM9" secondAttribute="centerX" id="mYC-Yx-D5N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="summaryLabel" destination="g5H-pC-bBH" id="E1F-pe-TR7"/>
+                        <outlet property="temperatureLabel" destination="mNW-ol-fM9" id="aft-hv-iEl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLN-xz-ffQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3730" y="21"/>
         </scene>
     </scenes>
 </document>

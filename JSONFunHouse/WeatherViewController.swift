@@ -15,20 +15,13 @@ class WeatherViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         temperatureLabel.text = String(format:"%.1f°", temperature)
         summaryLabel.text = summary
     }
     
-    private func loadWeather() {
-        if let data = getDataFromLocalJSONFileWithName("weather") {
-            do {
-                let json = try JSON(data: data)
-                temperature = try json.double("currently", "temperature")
-                summary = try json.string("currently", "summary")
-            } catch {
-                presentError(error)
-            }
-        }
+    func loadWeather() {
+        fatalError("loadWeather() should be implemented by a subclass")
     }
     
 }

@@ -19,6 +19,10 @@
 		1A146C5B1C3850E5005740AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A146C591C3850E5005740AE /* LaunchScreen.storyboard */; };
 		1A146C661C3850E5005740AE /* JSONFunHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A146C651C3850E5005740AE /* JSONFunHouseTests.swift */; };
 		1A146C711C3850E6005740AE /* JSONFunHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A146C701C3850E6005740AE /* JSONFunHouseUITests.swift */; };
+		1A15B9B41C473E80005B7F7B /* FreddyWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A15B9B31C473E80005B7F7B /* FreddyWeatherViewController.swift */; };
+		1A15B9B61C473F75005B7F7B /* NativeWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A15B9B51C473F75005B7F7B /* NativeWeatherViewController.swift */; };
+		1A15B9B81C474E2B005B7F7B /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A15B9B71C474E2B005B7F7B /* empty.json */; };
+		1A15B9BA1C475891005B7F7B /* SwiftyJSONWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A15B9B91C475891005B7F7B /* SwiftyJSONWeatherViewController.swift */; };
 		1A5D08001C443A7A005CB20D /* meetings.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A5D07FE1C443A7A005CB20D /* meetings.json */; };
 		1A5D08011C443A7A005CB20D /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A5D07FF1C443A7A005CB20D /* weather.json */; };
 		1A5D08031C443A9C005CB20D /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D08021C443A9C005CB20D /* WeatherViewController.swift */; };
@@ -69,6 +73,10 @@
 		1A146C6C1C3850E6005740AE /* JSONFunHouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONFunHouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A146C701C3850E6005740AE /* JSONFunHouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFunHouseUITests.swift; sourceTree = "<group>"; };
 		1A146C721C3850E6005740AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A15B9B31C473E80005B7F7B /* FreddyWeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreddyWeatherViewController.swift; sourceTree = "<group>"; };
+		1A15B9B51C473F75005B7F7B /* NativeWeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeWeatherViewController.swift; sourceTree = "<group>"; };
+		1A15B9B71C474E2B005B7F7B /* empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = empty.json; path = SampleJSON/empty.json; sourceTree = "<group>"; };
+		1A15B9B91C475891005B7F7B /* SwiftyJSONWeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSONWeatherViewController.swift; sourceTree = "<group>"; };
 		1A5D07FE1C443A7A005CB20D /* meetings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = meetings.json; path = SampleJSON/meetings.json; sourceTree = "<group>"; };
 		1A5D07FF1C443A7A005CB20D /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = weather.json; path = SampleJSON/weather.json; sourceTree = "<group>"; };
 		1A5D08021C443A9C005CB20D /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +122,7 @@
 		1A096A361C3851FA00E89867 /* Sample JSON */ = {
 			isa = PBXGroup;
 			children = (
+				1A15B9B71C474E2B005B7F7B /* empty.json */,
 				1A5D07FE1C443A7A005CB20D /* meetings.json */,
 				1A5D07FF1C443A7A005CB20D /* weather.json */,
 				1A096A3C1C385DC200E89867 /* firefly-missing-key.json */,
@@ -159,14 +168,13 @@
 		1A146C4F1C3850E5005740AE /* JSONFunHouse */ = {
 			isa = PBXGroup;
 			children = (
+				1A146C501C3850E5005740AE /* AppDelegate.swift */,
 				1AA7B5171C443FCE0071093E /* Extensions */,
 				1A096A3B1C3854B100E89867 /* Models */,
 				1A096A361C3851FA00E89867 /* Sample JSON */,
-				1A146C501C3850E5005740AE /* AppDelegate.swift */,
-				1A096A401C385E4600E89867 /* MenuViewController.swift */,
-				1AA9BAEC1C3CA2BA00B612C8 /* DataURLLoadable.swift */,
-				1A5D08021C443A9C005CB20D /* WeatherViewController.swift */,
-				1AA7B51A1C444A790071093E /* FreddyMeetingListViewConroller.swift */,
+				1A15B9B11C473D73005B7F7B /* Menu */,
+				1A15B9B21C473E34005B7F7B /* Weather */,
+				1A15B9BB1C4759E6005B7F7B /* Meeting */,
 				1ABA49B11C4578CF0094A682 /* Firefly Cast List */,
 				1A146C541C3850E5005740AE /* Main.storyboard */,
 				1A146C571C3850E5005740AE /* Assets.xcassets */,
@@ -194,6 +202,33 @@
 			path = JSONFunHouseUITests;
 			sourceTree = "<group>";
 		};
+		1A15B9B11C473D73005B7F7B /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				1A096A401C385E4600E89867 /* MenuViewController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		1A15B9B21C473E34005B7F7B /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				1A5D08021C443A9C005CB20D /* WeatherViewController.swift */,
+				1A15B9B51C473F75005B7F7B /* NativeWeatherViewController.swift */,
+				1A15B9B91C475891005B7F7B /* SwiftyJSONWeatherViewController.swift */,
+				1A15B9B31C473E80005B7F7B /* FreddyWeatherViewController.swift */,
+			);
+			name = Weather;
+			sourceTree = "<group>";
+		};
+		1A15B9BB1C4759E6005B7F7B /* Meeting */ = {
+			isa = PBXGroup;
+			children = (
+				1AA7B51A1C444A790071093E /* FreddyMeetingListViewConroller.swift */,
+			);
+			name = Meeting;
+			sourceTree = "<group>";
+		};
 		1AA7B5171C443FCE0071093E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +240,7 @@
 		1ABA49B11C4578CF0094A682 /* Firefly Cast List */ = {
 			isa = PBXGroup;
 			children = (
+				1AA9BAEC1C3CA2BA00B612C8 /* DataURLLoadable.swift */,
 				1A096A371C3852B600E89867 /* FreddyCastDemoViewController.swift */,
 				1AA9BAEA1C3C9A9900B612C8 /* SwiftyJSONCastDemoViewController.swift */,
 				1ABA49B21C4578EF0094A682 /* ArgoCastDemoViewController.swift */,
@@ -340,6 +376,7 @@
 				1A096A351C3851F500E89867 /* firefly.json in Resources */,
 				1A096A3E1C385DC200E89867 /* firefly-missing-key.json in Resources */,
 				1A096A3F1C385DC200E89867 /* firefly-wrong-type.json in Resources */,
+				1A15B9B81C474E2B005B7F7B /* empty.json in Resources */,
 				1A5D08011C443A7A005CB20D /* weather.json in Resources */,
 				1A146C581C3850E5005740AE /* Assets.xcassets in Resources */,
 				1A5D08001C443A7A005CB20D /* meetings.json in Resources */,
@@ -417,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A146C511C3850E5005740AE /* AppDelegate.swift in Sources */,
+				1A15B9B61C473F75005B7F7B /* NativeWeatherViewController.swift in Sources */,
 				1AA9BAED1C3CA2BA00B612C8 /* DataURLLoadable.swift in Sources */,
 				1A096A381C3852B600E89867 /* FreddyCastDemoViewController.swift in Sources */,
 				1ABA49B31C4578EF0094A682 /* ArgoCastDemoViewController.swift in Sources */,
@@ -429,6 +467,8 @@
 				1AA7B51B1C444A790071093E /* FreddyMeetingListViewConroller.swift in Sources */,
 				1A93E2A21C4579C4004DFF47 /* FireflyCastMember+Freddy.swift in Sources */,
 				1A096A411C385E4600E89867 /* MenuViewController.swift in Sources */,
+				1A15B9B41C473E80005B7F7B /* FreddyWeatherViewController.swift in Sources */,
+				1A15B9BA1C475891005B7F7B /* SwiftyJSONWeatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,8 @@ class MenuViewController : UITableViewController {
     }
     
     enum SectionType: String {
-        case Demos = "Freddy Demos"
+        case Weather = "Weather (Simple)"
+        case Meeting = "Meeting (Mapping)"
         case Freddy = "Firefly (Freddy)"
         case SwiftyJSON = "Firefly (SwiftyJSON)"
         case Argo = "Firefly (Argo)"
@@ -29,9 +30,13 @@ class MenuViewController : UITableViewController {
     
     private func loadMenu() {
         
-        let weather = MenuItem(name: "Weather Demo (Simple)", storyboardID: "WeatherViewController", dataFilename: "weather")
-        let meetingList = MenuItem(name: "Meeting List", storyboardID: "FreddyMeetingListViewConroller", dataFilename: "meetings")
-        let demos = MenuSection(sectionType: .Demos, items: [weather, meetingList])
+        let nativeWeather = MenuItem(name: "Native Swift", storyboardID: "NativeWeatherViewController", dataFilename: "weather")
+        let swiftyJSONWeather = MenuItem(name: "Swifty JSON", storyboardID: "SwiftyJSONWeatherViewController", dataFilename: "weather")
+        let freddyWeather = MenuItem(name: "Freddy", storyboardID: "FreddyWeatherViewController", dataFilename: "weather")
+        let weatherSection = MenuSection(sectionType: .Weather, items: [nativeWeather, swiftyJSONWeather, freddyWeather])
+
+        let freddyMeeting = MenuItem(name: "Meeting List", storyboardID: "FreddyMeetingListViewConroller", dataFilename: "meetings")
+        let meetingSection = MenuSection(sectionType: .Meeting, items: [freddyMeeting])
         
         let freddyMenu1 = MenuItem(name: "Cast Demo", storyboardID: "FreddyCastDemoViewController", dataFilename: "firefly")
         let freddyMenu2 = MenuItem(name: "Cast Demo (Missing Key)", storyboardID: "FreddyCastDemoViewController", dataFilename: "firefly-missing-key")
@@ -48,7 +53,7 @@ class MenuViewController : UITableViewController {
         let argoMenu3 = MenuItem(name: "Cast Demo (Bad Type)", storyboardID: "ArgoCastDemoViewController", dataFilename: "firefly-wrong-type")
         let argoSection = MenuSection(sectionType: .Argo, items: [argoMenu1, argoMenu2, argoMenu3])
         
-        self.sections = [demos, freddySection, swiftySection, argoSection]
+        self.sections = [weatherSection, meetingSection, freddySection, swiftySection, argoSection]
     }
 }
 
@@ -81,7 +86,7 @@ extension MenuViewController { // UITableViewDataSource
             var vc = self.storyboard!.instantiateViewControllerWithIdentifier(menuItem.storyboardID) as! DataURLLoadable
             vc.dataURL = NSBundle.mainBundle().URLForResource(menuItem.dataFilename, withExtension: "json")
             showViewController(vc as! UIViewController, sender: self)
-        case .Demos:
+        case .Weather, .Meeting:
             let vc = self.storyboard!.instantiateViewControllerWithIdentifier(menuItem.storyboardID) 
             showViewController(vc, sender: self)
         }
