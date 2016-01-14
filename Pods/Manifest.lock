@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Freddy:
-    :commit: 5a1e2dd5b4d1bd3be3e3af9d964a5d776c408dbb
+    :commit: 7babacc65a286c4f4ac4bb963b7a7faa3b3712b9
     :git: https://github.com/bignerdranch/Freddy.git
 
 SPEC CHECKSUMS:
