@@ -7,3 +7,9 @@ extension FireflyCastMember: JSONDecodable {
         biography = try value.string("bio")
     }
 }
+
+extension FireflyCastMember: JSONEncodable {
+    internal func toJSON() -> JSON {
+        return .Dictionary(["character": .String(name), "bio": .String(biography)])
+    }
+}

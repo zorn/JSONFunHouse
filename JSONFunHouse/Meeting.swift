@@ -35,3 +35,19 @@ extension Meeting: JSONDecodable {
         }
     }
 }
+
+
+extension Meeting: JSONEncodable {
+    internal func toJSON() -> JSON {
+        let df = NSDateFormatter()
+        df.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZ"
+        return .Dictionary(
+            [
+                "title": .String(title),
+                "rsvp_count": .Int(rsvpCount),
+                "date": .String(df.stringFromDate(date))
+            ]
+        )
+    }
+}
+
