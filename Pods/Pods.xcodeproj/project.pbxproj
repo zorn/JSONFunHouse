@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00CAB0BB039E3022E959331AAFA8950B /* JSONSequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF68788FBCEF958310110B6737D294B /* JSONSequences.swift */; };
+		061FD200A225CC59A8903FED3B946F47 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C843BF0367E3A336FF12269BB5D38A /* JSONParser.swift */; };
 		065AB8516494B1672C9EC473BCB277AF /* Applicative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F8321B11BE2D07E040AC94F027DDDB /* Applicative.swift */; };
-		08685589149247C15A670AA30D75A3DF /* Freddy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E56EFDAB066DA9890EF21742BBBEE36 /* Freddy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08685589149247C15A670AA30D75A3DF /* Freddy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E28618C3A4CD00978C0A2E7F77D2B0 /* Freddy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11E3D83A02022E1C5E5A350FE4538E8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		20C8E0ED0E4AFD3473014BEDBA4D9FA9 /* Pods-JSONFunHouse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDD434913F93EDBCB08AC310A327EBF /* Pods-JSONFunHouse-dummy.m */; };
 		249CD3B4DDC7738617F406CC87F2587E /* FailureCoalescing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4E1D7FADB0506CCB640042FC52BCC /* FailureCoalescing.swift */; };
@@ -19,29 +19,30 @@
 		340D8C9A73689D8BAFE7853CD82E3B08 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B64DC3DE860FC65D8A11B17492C55D /* SwiftyJSON.swift */; };
 		3830C9B36A7501F55B1FBCA7B624DCD1 /* curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0417A54917B817AF1BBFA223F71796C /* curry.swift */; };
 		4A994EF1FCD354FA8562B3E925CD0706 /* Alternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = D234FB65F46CC3CEB39FE9084166A11C /* Alternative.swift */; };
-		543AFD9F40484CCC87A1289EE931F94F /* Freddy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BEA14155DC549CBF7B90645D824E71 /* Freddy-dummy.m */; };
+		4C1780422B26917E68C93A01ED6F91F3 /* JSONEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458E568E92B71C7E0C85714C0D5F1278 /* JSONEncodable.swift */; };
 		5EDF98EE838FD870FDC9EB565D6190CF /* Argo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A9C480E932DB3C0BE9BAE9CED15323 /* Argo.swift */; };
-		6BB8AFC4E9CD80D9132206224C168304 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F800518E8D609B0A40A8766A322AE97 /* JSONDecodable.swift */; };
+		6458EDA5D4D6216ECD8EBFFD9913AADD /* JSONEncodingDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417870DDDC4F15C00DFB5FE17FCB6104 /* JSONEncodingDetector.swift */; };
 		6DE4EC426F243076F5DE9AFE05592220 /* Curry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A69BEDAA9A4D2F1841A974586A5745 /* Curry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71B12CC4BAD17D16C8142F7B77B9E651 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		71C4062EE75DA98E4581FD7D2A2CC016 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CF9AD3C9B6F72538A613211C32BCDA /* Decodable.swift */; };
+		77CFAF8A0AFF897FC18FFD6A22DDFB48 /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F5F474F50268BFE00895C61F6FD0EB /* JSONParsing.swift */; };
+		7CACD26183580E0029EC5C1424C40BE8 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D1459BA5E0EB3494863E87743ACE4 /* JSONDecodable.swift */; };
+		7CC2B313467D42EC6CE21B8E0CDC5615 /* JSONLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC3E6B53662A259A192BEE24B3BA78 /* JSONLiteralConvertible.swift */; };
+		7F7788F8514C39C47B298474891321F0 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16CA455837F016BAD2FC3388253E6AF /* JSON.swift */; };
 		80687DA823C1A18A0586857CA56C9999 /* DecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B205956C7CA6E5142FC026586F1FD8 /* DecodeError.swift */; };
 		84FFBBBFFCA276CB10B350030F36E01A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		87D990F954258BA8D0DCBD602A74D819 /* Monad.swift in Sources */ = {isa = PBXBuildFile; fileRef = F787CC201F87309B6A47A32566E23F6C /* Monad.swift */; };
 		8D5E90519C4304688D00809B91A305B6 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DEED9A73A1F2BA201E702FFB85C612 /* Dictionary.swift */; };
-		8E1CE8047CC33604B592C55F3AFFF831 /* JSONLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC75B941EB9BA6688F2A284396CDAA /* JSONLiteralConvertible.swift */; };
 		9B781106FC701AA7D598A233AD9A25E9 /* Runes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7700255FA1726CA7497A12BADDAEBA8C /* Runes.swift */; };
 		A518A8B7F60C103E83E80621F56CF883 /* StandardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B8C38B005EA7DB5873E84C9531671 /* StandardTypes.swift */; };
 		AB2AE1280AD486403514BEE3B728441A /* Argo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22CA54AA1A013283BB1CCB3B647F1A /* Argo-dummy.m */; };
-		AC185DD9B20607634DF3D33406EB67B5 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98279E97FD2D6C23F0EC50BA18A2EBC1 /* JSON.swift */; };
 		AE076C5CFF85E5CC7C12D64DBA36F66C /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F62AC1EBD6862CD0FFA28C57F0D4D /* SwiftyJSON-dummy.m */; };
 		B9DC321E54481AE043FC52F61FE5D6AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		BD9867ED903DCDE6AB2965E00DFB2457 /* Freddy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8304273DC605976272C4BB372A69AA6 /* Freddy-dummy.m */; };
 		BDB35B1365D73FB228A2200C36561C00 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B049C4343C9AC82DC259E62F4C9F585 /* Curry.swift */; };
-		BE002E8E28D9A9D62C51412CB5420730 /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54665216D64D81CBA7DF937049485800 /* JSONParsing.swift */; };
 		BE1BF529718391BC7EEB767427234B7D /* catDecoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70B1019F98370CB4682285F0D8A723 /* catDecoded.swift */; };
 		BF79AF4319089E2834D137CC2000BF80 /* Argo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1240A4CDBE281EE4073E999F636AA014 /* Argo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4032EA6F1C4570E0BB4E7582E68E1A7 /* flatReduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36831FA2757ACD4DC81D7E7887D52BFE /* flatReduce.swift */; };
-		C79AAEBD46D0BF82AA5B15DEB3AD2CB9 /* JSONEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF0764D13239315914701DDB0153E1B /* JSONEncodable.swift */; };
 		CBB440887CE5D8CE61E1B63B62A9DB9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		CD686CD1AD5B2F69CC5827D90A1EABE8 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41DE7400FFF885295C0D8C50D2514682 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE373559E03A38E7FBA5C3A1CAFD0CB6 /* decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27B254F9BA93AB2FBCEF107D8545127 /* decode.swift */; };
@@ -51,10 +52,9 @@
 		DB7B4A246976BDF7CEFD81FFD6F93435 /* Functor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D03ED6D17ADE709771A572825B6163 /* Functor.swift */; };
 		E1FEF5126C9ADEAE62F7871650E444F4 /* Decoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED57F2F6C443EB9D1468A15179E0F0 /* Decoded.swift */; };
 		E5855B4D43A409AC9F22D152C9A8C767 /* DecodeDecoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BA52EC3C6B0522209BE1EBD5D734F8 /* DecodeDecoded.swift */; };
-		E9BD0E68ACD4838ACDFBA1E0ECFD967A /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3110DEEB59424FA7281D7771F9F77C /* JSONParser.swift */; };
 		EB6AFB8C9169D9E162B551ED4A22B1CC /* RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B573EAFA8EC0FE7BB07C2C2AE24AC91 /* RawRepresentable.swift */; };
-		EC70B13132CDC976EAB53AB2E8A9DB2B /* JSONSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0E89C47269C2FF8722B2B85AFB4B2 /* JSONSubscripting.swift */; };
 		F19F371AAA7DD83795BABB07100C9904 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB396C8A93B0AB0F809B62E25B98C415 /* JSON.swift */; };
+		F52EF5C874F4C0C0CE623081FC8EEE4C /* JSONSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A5F4A2917833612D5CF3DBFCF6CCE6 /* JSONSubscripting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,53 +91,51 @@
 /* Begin PBXFileReference section */
 		06DEED9A73A1F2BA201E702FFB85C612 /* Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = Argo/Extensions/Dictionary.swift; sourceTree = "<group>"; };
 		099F62AC1EBD6862CD0FFA28C57F0D4D /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		0BF68788FBCEF958310110B6737D294B /* JSONSequences.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONSequences.swift; path = Freddy/JSONSequences.swift; sourceTree = "<group>"; };
-		0C511A6EB7C7DCD6846CF6048A74A8AB /* Freddy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Freddy.modulemap; sourceTree = "<group>"; };
-		10BEA14155DC549CBF7B90645D824E71 /* Freddy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Freddy-dummy.m"; sourceTree = "<group>"; };
 		1240A4CDBE281EE4073E999F636AA014 /* Argo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Argo-umbrella.h"; sourceTree = "<group>"; };
 		204B1184A7325C0825B7E382406D599D /* Argo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Argo-prefix.pch"; sourceTree = "<group>"; };
 		20A9C480E932DB3C0BE9BAE9CED15323 /* Argo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Argo.swift; path = Argo/Operators/Argo.swift; sourceTree = "<group>"; };
 		2646D1F5BFB3BA96DC2C576029B26C51 /* Freddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Freddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		276C492E6E82599AC01E1693FA0A197F /* Freddy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Freddy.xcconfig; sourceTree = "<group>"; };
 		28589D69A0EF96B19673AC96F45E6EB6 /* Curry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Curry-prefix.pch"; sourceTree = "<group>"; };
 		2F0DC5B63C5A3B590D549F97DD338418 /* Argo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Argo.h; path = Argo/Resources/Argo.h; sourceTree = "<group>"; };
 		30F8321B11BE2D07E040AC94F027DDDB /* Applicative.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Applicative.swift; path = Argo/Types/Decoded/Applicative.swift; sourceTree = "<group>"; };
+		334298E6E51092608A467BDD0B398BE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36831FA2757ACD4DC81D7E7887D52BFE /* flatReduce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = flatReduce.swift; path = Argo/Functions/flatReduce.swift; sourceTree = "<group>"; };
 		36AFCE845322EEFFA11D253298AF38D2 /* Curry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Curry.xcconfig; sourceTree = "<group>"; };
-		3CF0764D13239315914701DDB0153E1B /* JSONEncodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONEncodable.swift; path = Freddy/JSONEncodable.swift; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3F02FCE0C9749EB5AC923C403FBB5FDF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F800518E8D609B0A40A8766A322AE97 /* JSONDecodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodable.swift; path = Freddy/JSONDecodable.swift; sourceTree = "<group>"; };
 		3F84A899E4D05A88C9A3D74F5CBB0CB9 /* Pods-JSONFunHouse-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JSONFunHouse-frameworks.sh"; sourceTree = "<group>"; };
 		41465AA3EFA35C62EA5B1CEB10FCDE97 /* Curry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Curry-dummy.m"; sourceTree = "<group>"; };
+		417870DDDC4F15C00DFB5FE17FCB6104 /* JSONEncodingDetector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONEncodingDetector.swift; path = Sources/JSONEncodingDetector.swift; sourceTree = "<group>"; };
 		41DE7400FFF885295C0D8C50D2514682 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		42F52D02E58D36903FD1CAA3702C95A7 /* Pods-JSONFunHouse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JSONFunHouse-umbrella.h"; sourceTree = "<group>"; };
+		45585537D90BF9593E920B112BF45011 /* Freddy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Freddy.xcconfig; sourceTree = "<group>"; };
+		458E568E92B71C7E0C85714C0D5F1278 /* JSONEncodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONEncodable.swift; path = Sources/JSONEncodable.swift; sourceTree = "<group>"; };
 		4797B75777DE414AFACBCAD55B757691 /* Pods-JSONFunHouse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JSONFunHouse.modulemap"; sourceTree = "<group>"; };
-		54665216D64D81CBA7DF937049485800 /* JSONParsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONParsing.swift; path = Freddy/JSONParsing.swift; sourceTree = "<group>"; };
 		585B8C38B005EA7DB5873E84C9531671 /* StandardTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StandardTypes.swift; path = Argo/Types/StandardTypes.swift; sourceTree = "<group>"; };
 		5B049C4343C9AC82DC259E62F4C9F585 /* Curry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Curry.swift; path = Source/Curry.swift; sourceTree = "<group>"; };
-		5B3110DEEB59424FA7281D7771F9F77C /* JSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONParser.swift; path = Freddy/JSONParser.swift; sourceTree = "<group>"; };
-		5CA54CBEFF1F68784094F48D150442EE /* Freddy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Freddy-prefix.pch"; sourceTree = "<group>"; };
-		5E56EFDAB066DA9890EF21742BBBEE36 /* Freddy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Freddy-umbrella.h"; sourceTree = "<group>"; };
 		61A69BEDAA9A4D2F1841A974586A5745 /* Curry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Curry-umbrella.h"; sourceTree = "<group>"; };
 		62D03ED6D17ADE709771A572825B6163 /* Functor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functor.swift; path = Argo/Types/Decoded/Functor.swift; sourceTree = "<group>"; };
+		64E9BBAB94F463C9926C18D2FBA20D83 /* Freddy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Freddy-prefix.pch"; sourceTree = "<group>"; };
+		66E28618C3A4CD00978C0A2E7F77D2B0 /* Freddy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Freddy-umbrella.h"; sourceTree = "<group>"; };
 		67FC14174E0E15F27EC4F070FB6399F2 /* Curry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Curry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C789352140B5D131727C862C86EFD81 /* Curry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Curry.modulemap; sourceTree = "<group>"; };
-		72C0E89C47269C2FF8722B2B85AFB4B2 /* JSONSubscripting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONSubscripting.swift; path = Freddy/JSONSubscripting.swift; sourceTree = "<group>"; };
 		72FBA11B6E31128D54EA47AFBBF695DF /* Pods-JSONFunHouse-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JSONFunHouse-resources.sh"; sourceTree = "<group>"; };
 		7700255FA1726CA7497A12BADDAEBA8C /* Runes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Runes.swift; path = Carthage/Checkouts/Runes/Source/Runes.swift; sourceTree = "<group>"; };
 		7B70B1019F98370CB4682285F0D8A723 /* catDecoded.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = catDecoded.swift; path = Argo/Functions/catDecoded.swift; sourceTree = "<group>"; };
 		7C0E791AB400FEC583A1948C5A650500 /* Pods_JSONFunHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSONFunHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D74A47C5F1F7E601A12A1ED98C718C0 /* Argo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Argo.modulemap; sourceTree = "<group>"; };
-		84AC75B941EB9BA6688F2A284396CDAA /* JSONLiteralConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONLiteralConvertible.swift; path = Freddy/JSONLiteralConvertible.swift; sourceTree = "<group>"; };
 		84D57F39641112648DD4A29FA8FC6123 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		878AAED5776DA9921CFC717E9FD0EE21 /* Pods-JSONFunHouse-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JSONFunHouse-acknowledgements.markdown"; sourceTree = "<group>"; };
 		880D9452EA6A444B3C98BDA6025044C9 /* Pods-JSONFunHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSONFunHouse.debug.xcconfig"; sourceTree = "<group>"; };
 		8B573EAFA8EC0FE7BB07C2C2AE24AC91 /* RawRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RawRepresentable.swift; path = Argo/Extensions/RawRepresentable.swift; sourceTree = "<group>"; };
+		8D8D1459BA5E0EB3494863E87743ACE4 /* JSONDecodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodable.swift; path = Sources/JSONDecodable.swift; sourceTree = "<group>"; };
 		90CF9AD3C9B6F72538A613211C32BCDA /* Decodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decodable.swift; path = Argo/Types/Decodable.swift; sourceTree = "<group>"; };
-		98279E97FD2D6C23F0EC50BA18A2EBC1 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Freddy/JSON.swift; sourceTree = "<group>"; };
+		96F5F474F50268BFE00895C61F6FD0EB /* JSONParsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONParsing.swift; path = Sources/JSONParsing.swift; sourceTree = "<group>"; };
 		98CB064AF65B3BF9A5F8EC4AE43D44B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1A5F4A2917833612D5CF3DBFCF6CCE6 /* JSONSubscripting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONSubscripting.swift; path = Sources/JSONSubscripting.swift; sourceTree = "<group>"; };
 		A7BA52EC3C6B0522209BE1EBD5D734F8 /* DecodeDecoded.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecodeDecoded.swift; path = Argo/Operators/DecodeDecoded.swift; sourceTree = "<group>"; };
+		A7C843BF0367E3A336FF12269BB5D38A /* JSONParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONParser.swift; path = Sources/JSONParser.swift; sourceTree = "<group>"; };
+		A8304273DC605976272C4BB372A69AA6 /* Freddy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Freddy-dummy.m"; sourceTree = "<group>"; };
 		A84A40D996D8292FFDF47456F7F73360 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB8A86089F863AADBE9F50A3307F1D4A /* Pods-JSONFunHouse-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JSONFunHouse-acknowledgements.plist"; sourceTree = "<group>"; };
 		ADDD434913F93EDBCB08AC310A327EBF /* Pods-JSONFunHouse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JSONFunHouse-dummy.m"; sourceTree = "<group>"; };
@@ -147,9 +145,9 @@
 		BD9A7783D348B94DAB6C74BC7E916005 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		C8858A23EED35442C3EF211AE241802F /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FE23A9F773CE54694BB2EFE216755C /* DecodeOptional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecodeOptional.swift; path = Argo/Operators/DecodeOptional.swift; sourceTree = "<group>"; };
-		CAE1FE53AB98BCB01678CE72DEFD6C0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB59144C53ABCAA98D69FF089F8B757C /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		CD22CA54AA1A013283BB1CCB3B647F1A /* Argo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Argo-dummy.m"; sourceTree = "<group>"; };
+		CEAC3E6B53662A259A192BEE24B3BA78 /* JSONLiteralConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONLiteralConvertible.swift; path = Sources/JSONLiteralConvertible.swift; sourceTree = "<group>"; };
 		D0417A54917B817AF1BBFA223F71796C /* curry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = curry.swift; path = Argo/Functions/curry.swift; sourceTree = "<group>"; };
 		D234FB65F46CC3CEB39FE9084166A11C /* Alternative.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alternative.swift; path = Argo/Types/Decoded/Alternative.swift; sourceTree = "<group>"; };
 		D2FE2A7AA69139D2A7E4F19D01647975 /* sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = sequence.swift; path = Argo/Functions/sequence.swift; sourceTree = "<group>"; };
@@ -158,6 +156,8 @@
 		E516F7CEDB2C74FDA9E21DA9CA559BB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7B205956C7CA6E5142FC026586F1FD8 /* DecodeError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecodeError.swift; path = Argo/Types/DecodeError.swift; sourceTree = "<group>"; };
 		E8ED57F2F6C443EB9D1468A15179E0F0 /* Decoded.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoded.swift; path = Argo/Types/Decoded/Decoded.swift; sourceTree = "<group>"; };
+		F16CA455837F016BAD2FC3388253E6AF /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/JSON.swift; sourceTree = "<group>"; };
+		F174C778F246BF3D741364CD7CA17F86 /* Freddy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Freddy.modulemap; sourceTree = "<group>"; };
 		F7239F56594CF3237E50AAA2FD332C08 /* Curry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Curry.h; path = Source/Resources/Curry.h; sourceTree = "<group>"; };
 		F787CC201F87309B6A47A32566E23F6C /* Monad.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Monad.swift; path = Argo/Types/Decoded/Monad.swift; sourceTree = "<group>"; };
 		F7A2AFB8BF2BD2A47B2BF170470B5F39 /* Pods-JSONFunHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSONFunHouse.release.xcconfig"; sourceTree = "<group>"; };
@@ -214,10 +214,24 @@
 			children = (
 				713024B85BAE79A5E25AA6EE1002EE0A /* Argo */,
 				D27F84B61B50B727885C946D5444C02F /* Curry */,
-				38603EF721366DFFBE912C95415A1A5B /* Freddy */,
+				298CB36C64CDC529C463BBA476A1F819 /* Freddy */,
 				C36D37DFC3D8BF077F7F03D14FE42B42 /* SwiftyJSON */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		27B0EE1DC0C987BC3CF85B7689EDD4FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F174C778F246BF3D741364CD7CA17F86 /* Freddy.modulemap */,
+				45585537D90BF9593E920B112BF45011 /* Freddy.xcconfig */,
+				A8304273DC605976272C4BB372A69AA6 /* Freddy-dummy.m */,
+				64E9BBAB94F463C9926C18D2FBA20D83 /* Freddy-prefix.pch */,
+				66E28618C3A4CD00978C0A2E7F77D2B0 /* Freddy-umbrella.h */,
+				334298E6E51092608A467BDD0B398BE0 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Freddy";
 			sourceTree = "<group>";
 		};
 		27BF0F3EDC16301301C7028C8903D84B /* Products */ = {
@@ -232,34 +246,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38603EF721366DFFBE912C95415A1A5B /* Freddy */ = {
+		298CB36C64CDC529C463BBA476A1F819 /* Freddy */ = {
 			isa = PBXGroup;
 			children = (
-				98279E97FD2D6C23F0EC50BA18A2EBC1 /* JSON.swift */,
-				3F800518E8D609B0A40A8766A322AE97 /* JSONDecodable.swift */,
-				3CF0764D13239315914701DDB0153E1B /* JSONEncodable.swift */,
-				84AC75B941EB9BA6688F2A284396CDAA /* JSONLiteralConvertible.swift */,
-				5B3110DEEB59424FA7281D7771F9F77C /* JSONParser.swift */,
-				54665216D64D81CBA7DF937049485800 /* JSONParsing.swift */,
-				0BF68788FBCEF958310110B6737D294B /* JSONSequences.swift */,
-				72C0E89C47269C2FF8722B2B85AFB4B2 /* JSONSubscripting.swift */,
-				510FE705E1EC6F786D8C7FF287B47D9C /* Support Files */,
+				F16CA455837F016BAD2FC3388253E6AF /* JSON.swift */,
+				8D8D1459BA5E0EB3494863E87743ACE4 /* JSONDecodable.swift */,
+				458E568E92B71C7E0C85714C0D5F1278 /* JSONEncodable.swift */,
+				417870DDDC4F15C00DFB5FE17FCB6104 /* JSONEncodingDetector.swift */,
+				CEAC3E6B53662A259A192BEE24B3BA78 /* JSONLiteralConvertible.swift */,
+				A7C843BF0367E3A336FF12269BB5D38A /* JSONParser.swift */,
+				96F5F474F50268BFE00895C61F6FD0EB /* JSONParsing.swift */,
+				A1A5F4A2917833612D5CF3DBFCF6CCE6 /* JSONSubscripting.swift */,
+				27B0EE1DC0C987BC3CF85B7689EDD4FC /* Support Files */,
 			);
 			path = Freddy;
-			sourceTree = "<group>";
-		};
-		510FE705E1EC6F786D8C7FF287B47D9C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0C511A6EB7C7DCD6846CF6048A74A8AB /* Freddy.modulemap */,
-				276C492E6E82599AC01E1693FA0A197F /* Freddy.xcconfig */,
-				10BEA14155DC549CBF7B90645D824E71 /* Freddy-dummy.m */,
-				5CA54CBEFF1F68784094F48D150442EE /* Freddy-prefix.pch */,
-				5E56EFDAB066DA9890EF21742BBBEE36 /* Freddy-umbrella.h */,
-				CAE1FE53AB98BCB01678CE72DEFD6C0B /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Freddy";
 			sourceTree = "<group>";
 		};
 		5A243557DAB3EA113DAA17A8156CC34D /* Pods-JSONFunHouse */ = {
@@ -530,7 +530,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF239B2193ED98D1316EB27F32BDF256 /* Build configuration list for PBXNativeTarget "Freddy" */;
 			buildPhases = (
-				726B413532DFDE965C094CFD8C06EB4D /* Sources */,
+				3284FA28E7B36470EFBADC131FD55C78 /* Sources */,
 				78861905CD3FA4C571C741232D58691F /* Frameworks */,
 				FEBB3D7469AACECFCA712BDB2A2428B9 /* Headers */,
 			);
@@ -583,6 +583,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3284FA28E7B36470EFBADC131FD55C78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9867ED903DCDE6AB2965E00DFB2457 /* Freddy-dummy.m in Sources */,
+				7F7788F8514C39C47B298474891321F0 /* JSON.swift in Sources */,
+				7CACD26183580E0029EC5C1424C40BE8 /* JSONDecodable.swift in Sources */,
+				4C1780422B26917E68C93A01ED6F91F3 /* JSONEncodable.swift in Sources */,
+				6458EDA5D4D6216ECD8EBFFD9913AADD /* JSONEncodingDetector.swift in Sources */,
+				7CC2B313467D42EC6CE21B8E0CDC5615 /* JSONLiteralConvertible.swift in Sources */,
+				061FD200A225CC59A8903FED3B946F47 /* JSONParser.swift in Sources */,
+				77CFAF8A0AFF897FC18FFD6A22DDFB48 /* JSONParsing.swift in Sources */,
+				F52EF5C874F4C0C0CE623081FC8EEE4C /* JSONSubscripting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35DF48FBF03DEC45E89C4716B275C13F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -617,22 +633,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				20C8E0ED0E4AFD3473014BEDBA4D9FA9 /* Pods-JSONFunHouse-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		726B413532DFDE965C094CFD8C06EB4D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				543AFD9F40484CCC87A1289EE931F94F /* Freddy-dummy.m in Sources */,
-				AC185DD9B20607634DF3D33406EB67B5 /* JSON.swift in Sources */,
-				6BB8AFC4E9CD80D9132206224C168304 /* JSONDecodable.swift in Sources */,
-				C79AAEBD46D0BF82AA5B15DEB3AD2CB9 /* JSONEncodable.swift in Sources */,
-				8E1CE8047CC33604B592C55F3AFFF831 /* JSONLiteralConvertible.swift in Sources */,
-				E9BD0E68ACD4838ACDFBA1E0ECFD967A /* JSONParser.swift in Sources */,
-				BE002E8E28D9A9D62C51412CB5420730 /* JSONParsing.swift in Sources */,
-				00CAB0BB039E3022E959331AAFA8950B /* JSONSequences.swift in Sources */,
-				EC70B13132CDC976EAB53AB2E8A9DB2B /* JSONSubscripting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,7 +704,7 @@
 		};
 		3D790577B8ABC5F59F3CB0E664692232 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 276C492E6E82599AC01E1693FA0A197F /* Freddy.xcconfig */;
+			baseConfigurationReference = 45585537D90BF9593E920B112BF45011 /* Freddy.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -920,7 +920,7 @@
 		};
 		B49DEE53145F1256E79C100C0759561E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 276C492E6E82599AC01E1693FA0A197F /* Freddy.xcconfig */;
+			baseConfigurationReference = 45585537D90BF9593E920B112BF45011 /* Freddy.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;

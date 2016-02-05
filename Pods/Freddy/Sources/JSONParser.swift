@@ -62,14 +62,13 @@ private struct Literal {
 
 private let ParserMaximumDepth = 512
 
-/**
-A pure Swift JSON parser. This parser is much faster than the
-`NSJSONSerialization`-based parser (due to the overhead of having to
-dynamically cast the Objective-C objects to determine their type); however,
-it is much newer and has restrictions that the `NSJSONSerialization` parser
-does not. Two restrictions in particular are that it requires UTF-8 data as
-input and it does not allow trailing commas in arrays or dictionaries.
-**/
+
+/// A pure Swift JSON parser. This parser is much faster than the
+/// `NSJSONSerialization`-based parser (due to the overhead of having to
+/// dynamically cast the Objective-C objects to determine their type); however,
+/// it is much newer and has restrictions that the `NSJSONSerialization` parser
+/// does not. Two restrictions in particular are that it requires UTF-8 data as
+/// input and it does not allow trailing commas in arrays or dictionaries.
 public struct JSONParser {
 
     private enum Sign: Int {
@@ -87,7 +86,17 @@ public struct JSONParser {
         self.owner = owner
     }
 
+    /// Decode the root element of the `JSON` stream. This may be any fragment
+    /// or a structural element, per RFC 7159.
+    ///
+    /// The beginning bytes are used to determine the stream's encoding.
+    /// `JSONParser` currently only supports UTF-8 encoding, with or without
+    /// a byte-order mark.
+    ///
+    /// - throws: `JSONParser.Error` for any decoding failures, including a
+    ///   source location if needed.
     public mutating func parse() throws -> JSON {
+        try guardAgainstUnsupportedEncodings()
         let value = try parseValue()
         skipWhitespace()
         guard loc == input.count else {
@@ -159,6 +168,15 @@ public struct JSONParser {
                 return
             }
         }
+    }
+
+    private mutating func guardAgainstUnsupportedEncodings() throws {
+        let header = input.prefix(4)
+        let encodingPrefixInformation = JSONEncodingDetector.detectEncoding(header)
+        guard JSONEncodingDetector.supportedEncodings.contains(encodingPrefixInformation.encoding) else {
+            throw Error.InvalidUnicodeStreamEncoding(detectedEncoding: encodingPrefixInformation.encoding)
+        }
+        loc = loc.advancedBy(encodingPrefixInformation.byteOrderMarkLength)
     }
 
     private mutating func decodeNull() throws -> JSON {
@@ -546,12 +564,19 @@ public struct JSONParser {
 
 public extension JSONParser {
 
+    /// Creates a `JSONParser` ready to parse UTF-8 encoded `NSData`.
+    ///
+    /// If the data is mutable, it is copied before parsing. The data's lifetime
+    /// is extended for the duration of parsing.
     init(utf8Data inData: NSData) {
         let data = inData.copy() as! NSData
         let buffer = UnsafeBufferPointer(start: UnsafePointer<UInt8>(data.bytes), count: data.length)
         self.init(buffer: buffer, owner: data)
     }
 
+    /// Creates a `JSONParser` from the code units represented by the `string`.
+    ///
+    /// The synthesized string is lifetime-extended for the duration of parsing.
     init(string: String) {
         let codePoints = string.nulTerminatedUTF8
         let buffer = codePoints.withUnsafeBufferPointer { nulTerminatedBuffer in
@@ -565,6 +590,10 @@ public extension JSONParser {
 
 extension JSONParser: JSONParserType {
 
+    /// Creates an instance of `JSON` from UTF-8 encoded `NSData`.
+    /// - parameter data: An instance of `NSData` to parse `JSON` from.
+    /// - throws: Any `JSONParser.Error` that arises during decoding.
+    /// - seealso: JSONParser.parse()
     public static func createJSONFromData(data: NSData) throws -> JSON {
         var parser = JSONParser(utf8Data: data)
         return try parser.parse()
@@ -630,6 +659,9 @@ extension JSONParser {
         /// Badly-formed number with symbols ("-" or "e") but no following
         /// digits around `offset`.
         case NumberSymbolMissingDigits(offset: Int)
+
+        /// Supplied data is encoded in an unsupported format.
+        case InvalidUnicodeStreamEncoding(detectedEncoding: JSONEncodingDetector.Encoding)
     }
 
 }

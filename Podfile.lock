@@ -1,28 +1,19 @@
 PODS:
   - Argo (2.2.0)
   - Curry (1.4.0)
-  - Freddy (2.0.0b1)
+  - Freddy (2.0.1)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Argo
   - Curry
-  - Freddy (from `https://github.com/bignerdranch/Freddy.git`)
+  - Freddy
   - SwiftyJSON (~> 2.3)
-
-EXTERNAL SOURCES:
-  Freddy:
-    :git: https://github.com/bignerdranch/Freddy.git
-
-CHECKOUT OPTIONS:
-  Freddy:
-    :commit: 7babacc65a286c4f4ac4bb963b7a7faa3b3712b9
-    :git: https://github.com/bignerdranch/Freddy.git
 
 SPEC CHECKSUMS:
   Argo: 4f52a32b4cd913c204e5a45f420b3fccad3e3f24
   Curry: 294533187eedbf52db60a1e70c29b4f5c9f621c0
-  Freddy: 6aa6a9ee298e832ad788c59844994943bfcb9947
+  Freddy: c4e5ff6cc28239097da3bcf08b2f114f2229e2ee
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
 COCOAPODS: 0.39.0

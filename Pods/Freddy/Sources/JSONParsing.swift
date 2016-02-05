@@ -14,6 +14,9 @@ import Foundation
 public protocol JSONParserType {
 
     /// Creates an instance of `JSON` from `NSData`.
+    /// - parameter data: An instance of `NSData` to use to create `JSON`.
+    /// - throws: An error that may arise from calling `JSONObjectWithData(_:options:)` on `NSJSONSerialization` with the given data.
+    /// - returns: An instance of `JSON`.
     static func createJSONFromData(data: NSData) throws -> JSON
 
 }
@@ -26,6 +29,10 @@ extension JSON {
         self = try parser.createJSONFromData(data)
     }
 
+    /// Create `JSON` from UTF-8 `string`.
+    public init(jsonString: Swift.String, usingParser parser: JSONParserType.Type = JSONParser.self) throws {
+        self = try parser.createJSONFromData((jsonString as NSString).dataUsingEncoding(NSUTF8StringEncoding) ?? NSData())
+    }
 }
 
 // MARK: - NSJSONSerialization
